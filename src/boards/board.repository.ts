@@ -1,5 +1,5 @@
-import { Repository } from 'typeorm';
+import { EntityRepository, Repository } from 'typeorm';
 import { Board } from './board.entity';
 
-// EntityRepository(Board) -> deprecated
+@EntityRepository(Board)
 export class BoardRepository extends Repository<Board> {}
