@@ -5,7 +5,6 @@ import { BoardRepository } from './board.repository';
 import { Board } from './board.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { User } from 'src/users/user.entity';
-import { GetUser } from 'src/users/get-user.decorator';
 
 @Injectable()
 export class BoardsService {
